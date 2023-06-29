@@ -21,7 +21,7 @@ namespace VideoConferenceSystem.Controllers
         [Route("[action]/{meetingId}")]
         public Task<ActionResult<string>> GetMeetingName(int meetingId)
         {
-            //maybe we should amend this function with GetMeetingParticipants function
+            //maybe we should amend the logic of this function with GetMeetingParticipants function
             //to avoid force access to the DB
             return iMeetingBL.GetMeetingName(meetingId);
         }
